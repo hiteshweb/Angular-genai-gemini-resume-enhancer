@@ -7,7 +7,7 @@ import { map } from 'rxjs';
 })
 export class ResumeService {
 
-  private apiKey = 'AIzaSyDX64GTZNzGZXEUHhBnwv-2TzLbEMNLiRA';
+  private apiKey = '';
   private url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${this.apiKey}`;
 
   constructor(private http: HttpClient) {}
