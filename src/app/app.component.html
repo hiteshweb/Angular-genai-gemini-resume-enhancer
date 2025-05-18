@@ -1,0 +1,9 @@
+<h1>Resume Builder & Enhancer</h1>
+    <textarea [(ngModel)]="rawInput" rows="10" cols="80" placeholder="Paste your resume or summary..."></textarea>
+    <div>
+      <button (click)="enhance()">Enhance</button>
+      <button (click)="suggestSkills()">Suggest Skills</button>
+      <button (click)="checkGrammar()">Check Grammar</button>
+    </div>
+    <pre *ngIf="output">{{ output }}</pre>
+    <div *ngIf="errorCount !== null">Estimated grammatical errors: {{ errorCount }}</div>
